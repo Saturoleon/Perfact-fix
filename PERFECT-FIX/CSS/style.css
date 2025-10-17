@@ -1,0 +1,194 @@
+/* =========================================
+   Perfectfix Appliance Repair CSS
+   Red-White-Black Theme (Professional)
+========================================= */
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #b22222; /* Deep red */
+  color: white;
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 65px;
+  border-radius: 6px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffd700; /* Gold accent */
+  border-bottom: 2px solid #ffd700;
+}
+
+/* HERO */
+#hero {
+  height: 75vh;
+  background: 
+    linear-gradient(rgba(178, 34, 34, 0.8), rgba(0, 0, 0, 0.7)),
+    url('../images/Perfectfix Logo.jpg') no-repeat center center/contain;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.btn {
+  background-color: #ffd700; /* Gold button */
+  color: #000;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #b22222;
+  color: #fff;
+}
+
+/* WHY US SECTION */
+.why-us {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.why-us h2 {
+  color: #b22222;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.feature-box {
+  background-color: #f9f9f9;
+  border: 2px solid #b22222;
+  border-radius: 10px;
+  width: 260px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.feature-box h3 {
+  color: #b22222;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.cta .btn {
+  background-color: #b22222;
+  color: #fff;
+}
+
+.cta .btn:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  background-color: #b22222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  .feature-box {
+    width: 90%;
+  }
+}
